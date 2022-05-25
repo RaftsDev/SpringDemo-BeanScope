@@ -16,7 +16,9 @@
 	</bean>
 
 
-	<bean id="myCoach" class="com.raftsdev.springdemo.TrackCoach">
+	<bean id="myCoach" class="com.raftsdev.springdemo.TrackCoach"
+		init-method="doMyStartupStuff"
+		destroy-method="doMyStopStuff">
 
 		<!-- Setup constructor injection -->
 		<constructor-arg ref="myFortune" />
