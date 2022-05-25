@@ -23,5 +23,13 @@ public class TrackCoach implements Coach {
 		// TODO Auto-generated method stub
 		return "Just do it: " + fortuneService.getFortune();
 	}
+	
+	public void doMyStartupStuff() {
+		System.out.println("Startup bean...");
+	}
+	
+	public void doMyStopStuff() {
+		System.out.println("Stop bean...");
+	}
 
 }
